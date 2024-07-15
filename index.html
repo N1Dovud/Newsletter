@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+</head>
+<body>
+  <main>
+    <section id="sign-up">
+        <picture>
+          <source srcset="/assets/images/illustration-sign-up-mobile.svg" media="(max-width: 600px)">
+          <img src="/assets/images/illustration-sign-up-desktop.svg" alt="sign up desktop">
+        </picture>
+      <div id="container">
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul>
+          <li>Product discovery and building what matters</li>
+          <li>Measuring to ensure updates are a success</li>
+          <li>And much more!</li>
+        </ul>
+        <form action="">
+          <div class="flexbox">
+            <label for="email">Email address</label>
+            <span id="error">Valid email required</span>
+          </div>
+          <input type="text" placeholder="email@company.com" name="email" id="email">
+          <input type="submit" value="Subscribe to monthly newsletter" id="submit">
+        </form>
+      </div>
+    </section>
+    <section id="success">
+      <img src="assets/images/icon-success.svg" alt="Success icon" id="success-icon">
+      <h2>Thanks for subscribing!</h2>
+      <p>A confirmation email has been sent to <span id="email-address">ash@loremcompany.com</span>. 
+        Please open it and click the button inside to confirm your subscription</p>
+      <button>Dismiss message</button>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
